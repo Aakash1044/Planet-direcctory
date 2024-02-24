@@ -34,14 +34,17 @@ const PlanetCard = ({ planet }) => {
   }, [planet.films]);
 
   return (
+
     <div className="planet-card">
-      <h2 className='down'>{planet.name}</h2>
-      <p>Climate: {planet.climate}</p>
-      <p>Population: {planet.population}</p>
-      <p>Terrain: {planet.terrain}</p>
-      <p>Surface Water:{planet.surface_water}</p>
+      <div className='board'>
+        <h2 className='down'>{planet.name}</h2>
+        <p>Climate: {planet.climate}</p>
+        <p>Population: {planet.population}</p>
+        <p>Terrain: {planet.terrain}</p>
+        <p>Surface Water:{planet.surface_water}</p>
+      </div>
       <h3 className='down'>  Residents</h3>
-      <ul className='center'>
+      <ul className='center board1'>
         {residents.map(resident => (
           <div>
             <li key={resident.url} className='row'>
@@ -54,7 +57,8 @@ const PlanetCard = ({ planet }) => {
         ))}
       </ul>
       <h3 className='down'>Films</h3>
-      <ul className='center'>
+
+      <ul className='center board2'>
         {films.map(film => (
           <div >
             <li key={film.url} className='row'>

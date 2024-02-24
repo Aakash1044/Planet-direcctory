@@ -19,10 +19,10 @@ function App() {
 
   return (
     <div className="app">
-      <h1>Planets Directory</h1>
+      <div className="heading"><h1>Planets Directory</h1>
       {planets.map(planet => (
         <PlanetCard key={planet.url} planet={planet} />
-      ))}
+      ))}</div>
     </div>
   );
 }

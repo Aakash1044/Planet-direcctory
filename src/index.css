@@ -1,12 +1,19 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: wheat;
-  background-color: rgb(75, 30, 6);
+  background-color: #ffeaa7;
+  min-height: 70vh;
+  padding: 1rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(198, 1%, 29%);
+  font-family: "Architects Daughter", cursive;
+  text-align: center;
+  font-size: 130%;
   overflow-x: hidden;
 }
 
@@ -14,14 +21,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
-h1 {
-  text-align: center;
+.heading h1 {
+  padding: 0.2rem 1.2rem;
+  border-radius: 20% 5% 200% 100%/100% 200% 205%;
+  background-color: #fdcb6e;
 }
 .planet-card {
-  justify-content: center;
-  text-align: center;
   margin-top: 60px;
+  justify-content: center;
+  align-items: center;
 }
 .down {
   margin-top: 40px;
@@ -33,3 +41,4 @@ li {
 .center {
   margin-top: 50px;
 }
+
